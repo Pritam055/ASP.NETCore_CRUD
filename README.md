@@ -1,2 +1,2 @@
 # ASP.NETCore_CRUD
-A project performing CRUD options using ASP.NET core.
+A project performing CRUD operation using ASP.NET core.
