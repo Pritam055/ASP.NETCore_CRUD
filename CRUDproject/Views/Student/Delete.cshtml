@@ -1,0 +1,25 @@
+﻿@model CRUDproject.Models.Student
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete Student Data</h1>
+<hr />
+
+<form method="post" asp-action="DeleteStudent" asp-controller="Student">
+    <input asp-for="Id" hidden />
+    <label for="Name">Name</label>
+    <input type="text" name="Name" asp-for="Name" disabled/>  
+    <br /><br />
+    <label for="Rollno">Roll no.</label>
+    <input type="text" name="Rollno" asp-for="Rollno" disabled /> 
+    <br /><br />
+    <label for="Address">Address</label>
+    <input type="text" name="Address" asp-for="Address" disabled /> 
+    <br /><br />
+    <input type="submit" value="Delete Student" class="btn btn-warning" />
+    <br /><br />
+    <a asp-action="Index" asp-controller="Student" class="btn btn-outline-secondary">Back</a>
+
+</form>
